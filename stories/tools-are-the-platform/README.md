@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/tools-are-the-platform/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735118 (this page is a chapter of the system's report)  
 Systems: [Agent Swarm](https://github.com/coreyjames-ai/agent-swarm)  
 Technologies: [Agent tool qualification testing](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/agent-tool-qualification-testing) · [Agent tool-execution safety and sandboxing](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/agent-tool-execution-safety-and-sandboxing) · [Catalog versioning and drift detection](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/catalog-versioning-and-drift-detection) · [Declarative tool and agent definition](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/declarative-tool-and-agent-definition) · [JSON Schema](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/json-schema) · [Multi-agent system architecture and orchestration](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/multi-agent-system-architecture-and-orchestration) · [PostgreSQL](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/postgresql) · [Provider-terms compliance in model routing](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/provider-terms-compliance-in-model-routing) · [Redis](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/redis) · [Rust](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/rust) · [Static analysis as tests](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/static-analysis-as-tests) · [Tokio](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/tokio) · [YAML](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/yaml)  
 Skills: [distributed systems correctness](https://github.com/coreyjames-ai/portfolio/tree/main/skills/distributed-systems-correctness) · [tool synthesis and governed API integration](https://github.com/coreyjames-ai/portfolio/tree/main/skills/tool-synthesis-and-governed-api-integration) · [AI-assisted engineering methodology](https://github.com/coreyjames-ai/portfolio/tree/main/skills/ai-assisted-engineering-methodology)  
@@ -91,7 +92,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "Tools are the platform." coreyjames.ai, 2026. https://coreyjames.ai/stories/tools-are-the-platform/
+Corey James. "Tools are the platform." coreyjames.ai, 2026. https://coreyjames.ai/stories/tools-are-the-platform/ In: the Agent Swarm technical report, doi:10.5281/zenodo.23735118.
 
 ```bibtex
 @misc{coreyjames-tools-are-the-platform,
@@ -99,7 +100,8 @@ Corey James. "Tools are the platform." coreyjames.ai, 2026. https://coreyjames.a
   title = {Tools are the platform},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/tools-are-the-platform/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/agent-swarm/tree/main/stories/tools-are-the-platform}
+  note = {GitHub copy: https://github.com/coreyjames-ai/agent-swarm/tree/main/stories/tools-are-the-platform},
+  doi = {10.5281/zenodo.23735118}
 }
 ```
 

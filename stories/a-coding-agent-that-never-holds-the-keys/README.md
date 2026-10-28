@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/a-coding-agent-that-never-holds-the-keys/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735118 (this page is a chapter of the system's report)  
 Systems: [Agent Swarm](https://github.com/coreyjames-ai/agent-swarm)  
 Technologies: [Agent Client Protocol (ACP)](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/agent-client-protocol-acp) · [Agent tool-execution safety and sandboxing](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/agent-tool-execution-safety-and-sandboxing) · [Credential brokering and secrets management](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/credential-brokering-and-secrets-management) · [Docker](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/docker) · [Git](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/git) · [GitLab](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/gitlab) · [Identity and access management for AI agents](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/identity-and-access-management-for-ai-agents) · [JSON Web Token (JWT)](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/json-web-token-jwt) · [Linux security primitives](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/linux-security-primitives) · [Multi-agent system architecture and orchestration](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/multi-agent-system-architecture-and-orchestration) · [OpenAI-compatible API](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/openai-compatible-api) · [Redis](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/redis) · [Rust](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/rust) · [vLLM](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/vllm)  
 Skills: [sandboxing and container hardening](https://github.com/coreyjames-ai/portfolio/tree/main/skills/sandboxing-and-container-hardening) · [AI-assisted engineering methodology](https://github.com/coreyjames-ai/portfolio/tree/main/skills/ai-assisted-engineering-methodology) · [evidence-gated acceptance](https://github.com/coreyjames-ai/portfolio/tree/main/skills/evidence-gated-acceptance) · [multi-agent governance](https://github.com/coreyjames-ai/portfolio/tree/main/skills/multi-agent-governance)  
@@ -84,7 +85,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "A coding agent that never holds the keys." coreyjames.ai, 2026. https://coreyjames.ai/stories/a-coding-agent-that-never-holds-the-keys/
+Corey James. "A coding agent that never holds the keys." coreyjames.ai, 2026. https://coreyjames.ai/stories/a-coding-agent-that-never-holds-the-keys/ In: the Agent Swarm technical report, doi:10.5281/zenodo.23735118.
 
 ```bibtex
 @misc{coreyjames-a-coding-agent-that-never-holds-the-keys,
@@ -92,7 +93,8 @@ Corey James. "A coding agent that never holds the keys." coreyjames.ai, 2026. ht
   title = {A coding agent that never holds the keys},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/a-coding-agent-that-never-holds-the-keys/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/agent-swarm/tree/main/stories/a-coding-agent-that-never-holds-the-keys}
+  note = {GitHub copy: https://github.com/coreyjames-ai/agent-swarm/tree/main/stories/a-coding-agent-that-never-holds-the-keys},
+  doi = {10.5281/zenodo.23735118}
 }
 ```
 
