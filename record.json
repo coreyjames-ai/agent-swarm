@@ -1,0 +1,49 @@
+{
+ "url": "https://coreyjames.ai/systems/agent-swarm/",
+ "kind": "system",
+ "title": "Agent Swarm",
+ "subtitle": "A self-hosted, multi-host runtime where tools are the platform and agents are compositions",
+ "systems": [],
+ "technologies": [
+  "Rust",
+  "Tokio",
+  "Docker",
+  "Redis Streams",
+  "PostgreSQL",
+  "YAML tool definitions",
+  "Signed message envelopes",
+  "Open-source models on vLLM"
+ ],
+ "stats": [
+  {
+   "value": "12",
+   "label": "steps every tool call passes through, in a frozen order"
+  },
+  {
+   "value": "40",
+   "label": "declarative tools, none without golden and attack fixtures"
+  },
+  {
+   "value": "0",
+   "label": "commits to the main repository across three coding-agent runs on a local model"
+  },
+  {
+   "value": "60+",
+   "label": "locked decisions in a 2,000-line master plan"
+  }
+ ],
+ "lede": "Every new agent an organisation adds tends to arrive with its own tooling, its own permissions and its own messaging, and every one of those is a new place for something to go wrong. I wanted to build the safety machinery once, make it the only path, and make adding an agent a matter of declaring one. Agent Swarm is that runtime. Tools are the platform: every action any agent takes passes through one frozen, tested pipeline. The runtime runs coding, analysis and service agents on local open-source models and on frontier models, spans more than one machine, and its persona library and container launcher start the seats of my governance platform.",
+ "quote": "I froze the pipeline order. Less flexibility, and exactly one way an action happens.",
+ "evidence": [
+  "Agent orchestration: a self-hosted multi-host agent runtime where every tool call passes one frozen pipeline of 12 steps, and a new agent persona is a declaration.",
+  "Test-gated tool catalogs: 40 declarative tools, none without golden and attack fixtures, with 50 golden fixtures in the catalog and hash-pinned catalogs checked for drift on every host.",
+  "Sandboxing and container hardening: a persona launcher of about 23,000 lines starting sandboxed containers with scoped tokens, workspaces and budgets; secrets released per action and never written to disk.",
+  "Distributed agent messaging: signed agent-to-agent envelopes with chain-depth checks, checked locally for sub-millisecond peer authorisation, and heartbeats that reclaim work from a silent agent.",
+  "Least-privilege design for autonomous coding agents: 0 commits to the main repository across three coding-agent runs on a local model.",
+  "Architecture under written decisions: 60+ locked decisions in a 2,000-line master plan, and a carve gate that keeps product crates free of estate-specific imports."
+ ],
+ "canonical": "https://coreyjames.ai/systems/agent-swarm/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/agent-swarm"
+}

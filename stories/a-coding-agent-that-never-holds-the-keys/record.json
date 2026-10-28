@@ -1,0 +1,44 @@
+{
+ "url": "https://coreyjames.ai/stories/a-coding-agent-that-never-holds-the-keys/",
+ "kind": "story",
+ "title": "A coding agent that never holds the keys",
+ "subtitle": "A sandboxed agent on a local open-source model that edits, tests and proposes changes without a repository credential",
+ "systems": [
+  "agent-swarm"
+ ],
+ "technologies": [
+  "Rust",
+  "Docker",
+  "Redis Streams",
+  "Signed message envelopes",
+  "Open-source models on vLLM",
+  "GitLab API"
+ ],
+ "stats": [
+  {
+   "value": "0",
+   "label": "agent commits or merge requests against the main repository"
+  },
+  {
+   "value": "2",
+   "label": "full runs through edit, test, commit, push and merge request"
+  },
+  {
+   "value": "1",
+   "label": "failing-test run that stopped without pushing, scored as a pass"
+  }
+ ],
+ "lede": "A coding agent running on a local open-source model edited code in a throwaway container, ran the tests, committed, pushed, and a merge request appeared for human review. The agent never held the repository credential and had no path to the main branch. A second, long-lived agent checked the request and opened the merge request on its behalf. Autonomous coding agents are useful in proportion to what they can touch, and dangerous in the same proportion. The usual compromise hands the agent a scoped token and hopes.",
+ "quote": "An impressive open-ended demo would have proved less.",
+ "evidence": [
+  "Least-privilege design for autonomous coding agents: a worker on a local open-weight model edits, tests and pushes its own branch with no repository credential; 0 commits or merge requests against the main repository.",
+  "Sandboxing and container hardening: the worker runs in a throwaway container destroyed after the run, on a model served through vLLM on my own hardware.",
+  "Gatekeeper pattern for AI agents: a separate long-lived agent holds the credential, checks the worker's request and opens the merge request for human review, across 2 full runs.",
+  "Honest acceptance testing for AI agents: 1 failing-test run that stopped without pushing was scored as a pass, because the security property was what the test measured."
+ ],
+ "problem": "governed-agents",
+ "canonical": "https://coreyjames.ai/stories/a-coding-agent-that-never-holds-the-keys/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/agent-swarm/tree/main/stories/a-coding-agent-that-never-holds-the-keys"
+}

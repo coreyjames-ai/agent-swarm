@@ -1,0 +1,46 @@
+{
+ "url": "https://coreyjames.ai/stories/tools-are-the-platform/",
+ "kind": "story",
+ "title": "Tools are the platform",
+ "subtitle": "One frozen, tested pipeline for every action an agent takes, and catalogs that cannot drift between hosts",
+ "systems": [
+  "agent-swarm"
+ ],
+ "technologies": [
+  "Rust",
+  "Tokio",
+  "YAML tool definitions",
+  "JSON Schema",
+  "PostgreSQL LISTEN/NOTIFY",
+  "Redis",
+  "Agent tool-execution safety"
+ ],
+ "stats": [
+  {
+   "value": "12",
+   "label": "pipeline steps on every call, in an order frozen behind sign-off"
+  },
+  {
+   "value": "40",
+   "label": "declarative tools, plus Rust built-ins"
+  },
+  {
+   "value": "50",
+   "label": "golden fixtures; a tool without its fixtures fails the build"
+  }
+ ],
+ "lede": "An agent that acts on real systems needs validation, authorisation, limits, secret scrubbing, audit and observation on every action. If each tool implements those itself, every new tool is a new hole. In my agent runtime every call, whatever the tool, passes through one frozen, ordered pipeline of twelve steps, and a tool contributes only its core behaviour. Most tools are declared in YAML. No tool enters the catalog without golden fixtures and attack fixtures, and the build fails if one is missing. Tools come in many kinds: shell commands, HTTP calls, compositions of other tools, calls to other agents. Local open-source models make malformed calls. Adding a tool has to stay cheap or the estate stops growing.",
+ "quote": "Exceptions are where the holes are.",
+ "evidence": [
+  "Agent tool execution safety: every agent call passes one frozen pipeline of 12 steps covering validation, authorisation, limits, secret scrubbing, audit and observation; a tool supplies only its own behaviour.",
+  "Declarative tool design: 40 declarative tools in YAML carrying their schema, limits and authorisation, plus Rust built-ins.",
+  "Test-gated tool catalogs: 50 golden fixtures plus attack fixtures and shell-injection fixtures; a tool without its fixtures fails the build.",
+  "Distributed configuration consistency: hash-pinned tool catalogs with drift detection over database notifications, falling back to polling under measured saturation thresholds with hysteresis.",
+  "Least privilege for AI agents: an agent can call only the tools its persona was given."
+ ],
+ "problem": "governed-agents",
+ "canonical": "https://coreyjames.ai/stories/tools-are-the-platform/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/agent-swarm/tree/main/stories/tools-are-the-platform"
+}
